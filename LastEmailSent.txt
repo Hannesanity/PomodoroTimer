@@ -1,0 +1,9 @@
+Hello! Here is your usage summary for the month of January 2025: 
+Total Focus Time: 6 minutes
+Total Duration: 14 minutes
+Total Sessions: 7
+Interrupted Sessions: 4
+Completed Sessions: 3
+Average Session Duration: 2 minutes
+Completion Rate: 42.857142857142854%
+Longest Completed Streak: 2 sessions
