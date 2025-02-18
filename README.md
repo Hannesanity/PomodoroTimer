@@ -4,7 +4,7 @@
 This is a **C# WPF-based Pomodoro Timer** that helps users efficiently manage their work sessions using the Pomodoro technique. The application includes additional features such as scheduling, historical tracking, email reports, and customizable settings.
 
 ## Features
-- **Pomodoro Timer** ⏳
+- **Pomodoro Timer** 
   - Set custom durations for **Pomodoro, Short Break, and Long Break**
   - Configurable session intervals
 - **Task Logging & History** 
@@ -90,7 +90,7 @@ SENDER_EMAIL_PASSWORD
 
 ---
 
-## 🛠 Development
+## Development
 ### Project Structure
 ```
 PomodoroTimer/
@@ -117,7 +117,7 @@ PomodoroTimer/
 
 ## Idea
 Feel free to submit **issues** or **pull requests**:
-1. Fork the repository 🍴
+1. Fork the repository 
 2. Create a feature branch (`git checkout -b feature-new`)
 3. Commit your changes (`git commit -m 'Add new feature'`)
 4. Push to the branch (`git push origin feature-new`)
