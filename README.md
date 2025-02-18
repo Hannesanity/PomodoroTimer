@@ -7,20 +7,20 @@ This is a **C# WPF-based Pomodoro Timer** that helps users efficiently manage th
 - **Pomodoro Timer** ⏳
   - Set custom durations for **Pomodoro, Short Break, and Long Break**
   - Configurable session intervals
-- **Task Logging & History** 📜
+- **Task Logging & History** 
   - Saves completed sessions
   - Tracks Pomodoro history for efficiency analysis
-- **Email Reporting** 📧
+- **Email Reporting** 
   - Automatically sends a monthly Pomodoro session summary
   - Configurable email settings
-- **Schedule Management** 📅
+- **Schedule Management** 
   - Saves the last sent report and schedules the next one
   - Prevents duplicate reports within the same month
-- **User Customization** ⚙️
+- **User Customization** 
   - Save preferences in a `.env` file
   - Sound notifications for session changes
   - Toggleable email reporting
-- **Settings Management** 🎛️
+- **Settings Management** 
   - Modify Pomodoro timings
   - Enable/Disable email reports
   - Select notification sound
@@ -45,19 +45,40 @@ Ensure you have the following installed:
 3. Build and run the solution (`Ctrl + F5`)
 
 ### Configurations
-The application stores settings in a `.env` file. If not found, it will be automatically created with default values:
-```
-SOUND_FILE=
-EMAIL_ADDRESS=
-SEND_REPORTS=False
-```
+
 Modify the `.env` file to configure your settings:
 - Set `EMAIL_ADDRESS=your_email@example.com` for email reports.
 - Set `SEND_REPORTS=True` to enable automatic email reporting.
 
 ---
 
-## 🖥️ Usage Guide
+## Configuration Setup
+
+The application stores settings in a `.env` file. If not found, it will be automatically created with default values:
+```
+SOUND_FILE=
+EMAIL_ADDRESS=
+SEND_REPORTS=False
+SENDER_EMAIL_ADDRESS
+SENDER_EMAIL_PASSWORD
+```
+
+### Email Configuration
+1. Rename `.envexample` to `.env`
+2. Configure your email settings in the `.env` file:
+   - `EMAIL_ADDRESS`: Your receiving email address for reports
+   - `SENDER_EMAIL_ADDRESS`: Email address that will send the reports
+   - `SENDER_EMAIL_PASSWORD`: App-specific password for the sender email
+
+#### Important Note on Email Security
+- Do NOT use your regular email password
+- For Gmail users:
+  1. Enable 2-Step Verification in your Google Account
+  2. Go to Google Account → Security → App passwords
+  3. Generate a new app-specific password
+  4. Use this generated password in `SENDER_EMAIL_PASSWORD`
+
+##  Usage Guide
 ### Timer Controls
 - **Start/Pause** the Pomodoro Timer
 - **Reset** to restart a session
@@ -69,7 +90,7 @@ Modify the `.env` file to configure your settings:
 
 ---
 
-## 🛠️ Development
+## 🛠 Development
 ### Project Structure
 ```
 PomodoroTimer/
@@ -94,19 +115,17 @@ PomodoroTimer/
 
 ---
 
-## 📩 Idea
+## Idea
 Feel free to submit **issues** or **pull requests**:
 1. Fork the repository 🍴
 2. Create a feature branch (`git checkout -b feature-new`)
 3. Commit your changes (`git commit -m 'Add new feature'`)
 4. Push to the branch (`git push origin feature-new`)
-5. Open a Pull Request 🎉
+5. Open a Pull Request 
 
 ---
 
 ## Credits
-
-## Credits & Acknowledgments
 - System design inspired by [Pomofocus.io](https://pomofocus.io/)
 - Pomodoro timer implementation based on techniques from [Replicon's guide](https://www.replicon.com/blog/pomodoro-technique/)
 - UI components and styling using [Material Design in XAML](http://materialdesigninxaml.net/)
