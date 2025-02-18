@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="back.png" />
+    <None Remove="exit.png" />
+    <None Remove="minimize.png" />
+    <None Remove="mute.png" />
+    <None Remove="next.png" />
+    <None Remove="pause.png" />
+    <None Remove="play.png" />
+    <None Remove="reset.png" />
+    <None Remove="settings.png" />
+    <None Remove="tomato.png" />
+    <None Remove="unmte.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetEnv" Version="3.1.1" />
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+    <PackageReference Include="JsonSerialization" Version="1.0.5" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="back.png" />
+    <Resource Include="exit.png" />
+    <Resource Include="minimize.png" />
+    <Resource Include="mute.png" />
+    <Resource Include="next.png" />
+    <Resource Include="pause.png" />
+    <Resource Include="play.png" />
+    <Resource Include="reset.png" />
+    <Resource Include="settings.png" />
+    <Resource Include="tomato.png" />
+    <Resource Include="unmte.png" />
+  </ItemGroup>
+
+</Project>

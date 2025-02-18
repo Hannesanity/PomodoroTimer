@@ -1,0 +1,57 @@
+# User-specific files
+.vs/
+.vscode/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]istPublic/
+[Dd]ebug-*\
+[Dd]evelopment/
+bin/
+obj/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-generated files
+*.dbmdl
+*.bak
+*.log
+*.log.*
+
+# NuGet packages
+*.nupkg
+# packages/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Tye / VS for Mac
+.tye/
+
+# JetBrains Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Windows Installer
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Env and database
+.env
+Pomodoro.db

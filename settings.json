@@ -1,0 +1,7 @@
+{
+	"SendReport": false,
+ 	"IsMinimized": false,
+ 	"SoundFileLocation": "path/to/soundfile.wav",
+ 	"EmailAddress": "example@example.com",
+ 	"SendReportsEvery": "Monthly"
+}
